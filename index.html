@@ -9,21 +9,9 @@
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
-<header>
-	<div><h1>Healthy Deli</h1></div>
-	<nav>
-		<ul id="header-nav">
-			<li>ABOUT</li>
-			<li>FEATURE</li>
-			<li>PRODUCTS</li>
-			<li id="shoping">ONLINESHOP</li>
-		</ul>
-	</nav>
-</header>
-<body>
 	<!-- Loading -->
-<div id="loader-bg">
-	<div class="spinner">
+<div id="loader-bg" class="hide">
+	<div id="loader" class="hide">
 		<div class="sk-circle">
 		  <div class="sk-circle1 sk-child"></div>
 		  <div class="sk-circle2 sk-child"></div>
@@ -42,12 +30,24 @@
 </div>
 <!-- Loading終 -->
 
+<header>
+	<div><h1>Healthy Deli</h1></div>
+	<nav>
+		<ul id="header-nav">
+			<li>ABOUT</li>
+			<li>FEATURE</li>
+			<li>PRODUCTS</li>
+			<li id="shoping">ONLINESHOP</li>
+		</ul>
+	</nav>
+</header>
+<body>
 	<main>
 		<section class="block-1">
 			<div class="fullscreen-bg">
 				<video id="bg-video" autoplay loop muted>
-					<source src="bg-movie.mp4" type="video/mp4">
-					<source src="bg-movie.webm" type="video/webm">
+					<source src="img/bg-movie.mp4" type="video/mp4">
+<!-- 					<source src="img/bg-movie.webm" type="video/webm"> -->
 				</video>
 			</div>
 			<div class="video-text">
@@ -116,16 +116,32 @@
 					</div>
 					<div id="feature3" class="img-box"></div>
 				</div>
-			<h2 class="subtitle feature">Healthy Deliの利用方法</h2>
-			<div class="flexbox">
-				<div class="b3-textbox">testtesttesttesttesttesttesttesttesttesttesttesttesttesttest</div>
-				<div class="b3-textbox">testtesttesttesttesttesttesttesttesttesttesttesttesttesttest</div>
-				<div class="b3-textbox">testtesttesttesttesttesttesttesttesttesttesttesttesttesttest</div>
+			<div class="bl3-wrap-top">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 50" preserveAspectRatio="none" id="svg-bg">
+					<path d="M-5,0 v8 q10,10 20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t20,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,100 t0,0 v-8 Z" fill="#369A7E"></path>
+				</svg>
+			</div>
+			<div class="colour-block">
+			<h2 class="subtitle feature">Healthy Deli 利用方法</h2>
+				<div class="flexbox">
+					<div class="b3-textbox">testtesttesttesttesttesttesttesttesttesttesttesttesttesttest</div>
+					<div class="b3-textbox">testtesttesttesttesttesttesttesttesttesttesttesttesttesttest</div>
+					<div class="b3-textbox">testtesttesttesttesttesttesttesttesttesttesttesttesttesttest</div>
+				</div>
+			</div>
+			<div class="bl3-wrap-bottom">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 50" preserveAspectRatio="none" id="svg-bg">
+					<path d="M0,0 v25 q10,10 20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 v-25 Z" fill="#369A7E"></path>
+				</svg>
 			</div>
 		</section>
 		<div id="skew-4" class="skew-cc"></div>
-		<section class="block-4">products</section>
-		<section class="block-5">onlineshop</section>
+		<section class="block-4">
+				<h1 class="title">products</h1>
+		</section>
+		<section class="block-5">
+			<h1 class="subtitle">onlineshop</h1>
+		</section>
 	</main>
 </body>
 <footer>
