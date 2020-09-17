@@ -384,9 +384,37 @@ video {
 .block-4 {
 	height: 80vh;
 }
-
+.shop-subname {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+.shop-detail {
+	font-size: 1.0rem;
+}
 .block-5 {
-	height: 120vh;
+	height: 50vh;
+}
+#skew-5 {
+	position: relative;
+	top: 100px;
+	height: 150px;
+	background: linear-gradient(to right top, #fff 49%, transparent 50%);
+	z-index: -10;
+}
+#skew-6 {
+	top: 0;
+	background: linear-gradient(to right bottom, transparent 49%, #C0E645 50%);
+}
+.btn {
+	border: solid 1px;
+	width: 180px;
+	height: 60px;
+	margin: 45px auto;
+	padding: 20px 40px;
+	line-height: 60px;
+}
+#shop-text {
+	text-align: center;
 }
 footer {
 	background-color: #C0E645;
