@@ -14,6 +14,3 @@
 
 ### 構成
   後日追加
-
-### demo（適宜更新）
-https://sk-practice.work/
