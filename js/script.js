@@ -18,28 +18,47 @@ function stopload(){
     loader.classList.add('fadeout-loader');
 };
 
-$(function() {
-	var h = $(window).height();
-	var speed = 200;
-	$('.contents').each(function(){
-		$(this).css({height:h}
-	    );
-    });
-
-	$(window).on('scroll',function(){
-		var value = $(this).scrollTop();
-		$('.fadeDone').each(function(){
-			var fadeTop = $(this).offset().top;
-			var fadeShow = fadeTop - h/1.1;
-			if(value >= fadeShow) {
-				$(this).stop().animate({
-					opacity: 1
-				}, speed);
+$(function(){
+	$(window).scroll(function(){
+		$('.fade').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var h = $(window).height();
+			if (scroll > elemPos - h){
+				$(this).addClass('scroll');
 			}else{
-				$(this).stop().animate({
-					opacity: 0
-				}, speed);
+				$(this).removeClass('scroll');
 			}
 		});
+		$('.slideRight').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var h = $(window).height();
+			if (scroll > elemPos - h){
+				$(this).addClass('scroll');
+			}else{
+				$(this).removeClass('scroll');
+			}
+		});
+		$('.slideLeft').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var h = $(window).height();
+			if (scroll > elemPos - h){
+				$(this).addClass('scroll');
+			}else{
+				$(this).removeClass('scroll');
+			}
+		});
+		$(window).scroll(function (){
+	    	$('.slideup').each(function(){
+	        	var elemPos = $(this).offset().top,
+	            	scroll = $(window).scrollTop(),
+	            	windowHeight = $(window).height()-300;
+	          if (scroll > elemPos - windowHeight){
+	            $(this).addClass('slide');
+	            }
+	        });
+	    });
 	});
 });
