@@ -4,12 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="ヘルシーなごちそうをお届けする新感覚のフローズンミール">
 	<title>Healthy Deli</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
-
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&family=Noto+Serif+JP&family=PT+Serif:wght@700&display=swap">
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+
+	<script type="text/javascript" src="js/slick.min.js"></script>
 </head>
 <!-- Loading -->
 <div id="loader-bg" class="hide">
@@ -46,7 +49,8 @@
 <!-- 波線bg終 -->
 <body>
 <header>
-	<div><img src="img/logo.png" class="logo-bg" width="280" height="120"></div>
+	<div><img src="img/logo.png" id="logo" width="340" height="90"></div>
+	<span id="logo-bg"></span>
 	<nav>
 		<ul id="header-nav">
 			<li class="normal">ABOUT</li>
@@ -67,8 +71,8 @@
 	<div class="video-text">
 		<h2>ヘルシーなごちそうを<br>お届けします</h2>
 	</div>
+	<div id="skew-1" class="skew-c"></div>
 </section>
-<div id="skew-1" class="skew-c"></div>
 <section class="block-2">
 	<h1 class="title fade">about</h1>
 	<div id="b2-textbox" class="slideLeft">
@@ -133,7 +137,7 @@
 		</div>
 	<svg viewBox="0 0 1500 50" class="bl3-wrap-top"><use xlink:href="#wave-top"></use></svg>
 	<div class="colour-block">
-	<h2 class="subtitle feature">Healthy Deli 利用方法</h2>
+	<h2 class="subtitle feature fade">Healthy Deli 利用方法</h2>
 		<div class="flexbox">
 			<div class="b3-textbox fade">
 				<img src="img/feature-4.png">
@@ -161,30 +165,46 @@
 <div id="skew-4" class="skew-cc"></div>
 <section class="block-4">
 		<h1 class="title">products</h1>
+		  <div class="slider-for">
+		    <div class="img product-1"></div>
+		    <div class="img product-2"></div>
+		    <div class="img product-3"></div>
+		    <div class="img product-4"></div>
+		  </div>
+		  <div class="slider-nav">
+		  	<div class="img product-1"></div>
+		    <div class="img product-2"></div>
+		    <div class="img product-3"></div>
+		    <div class="img product-4"></div>
+		  </div>
 </section>
+<div id="skew-5" class="skew-cc"></div>
 <section class="block-5">
+<div id="skew-6" class="skew-cc"></div>
   <div>
-  	<div id="shop-wrap">
+  	<div id="shop-wrap" class="fade">
 		<h1 class="title">shop info</h1>
 		<div class="shop-box">
-			<div></div>
-			<h2 class="shop-name">LINKS UMEDA</h2>
-			<span class="shop-subname">梅田メトロ店</span><br>
-			<span class="shop-detail">ADDRESS.</span>
-			大阪府大阪市XXX町XX 1-1-XX<br>
-			<span class="shop-detail">TEL.</span>
-			123-45-6789<br>
+				<div id="shop-detail-1">
+					<h2 class="shop-name">LINK UMEDA</h2>
+					<span class="shop-subname">The MARKET 梅田店</span><br>
+					<div class="shop-text">
+						<span>冷凍コーナーにて一部商品の取り扱い有<br>
+							  ADDRESS  大阪府大阪市XXX町XX<br>1-1-XX BF1<br>
+							  TEL.  123-45-6789</span><br>
+					</div>
+				</div>
+				<img src="img/shop-1.jpg" width=340 height="220">
+		</div>
 			<div class="btn-wrapper dark-btn">
 				<div class="btn">
-					<span class="btn-text">オンライン予約する →</span>
+					<span class="btn-text">オンラインショップ →</span>
 				</div>
 			</div>
 		</div>
 	</div>
   </div>
-<div id="skew-5" class="skew-cc"></div>
 </section>
-<div id="skew-6" class="skew-cc"></div>
 </main>
 <footer>
 	<span>(c) HEALTHY DELI 2020 / </span>
