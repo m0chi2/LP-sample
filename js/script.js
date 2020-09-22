@@ -21,9 +21,9 @@ function stopload(){
 $(function(){
 	$(window).scroll(function(){
 		$('.fade').each(function(){
-			var elemPos = $(this).offset().top;
-			var scroll = $(window).scrollTop();
-			var h = $(window).height();
+			var elemPos = $(this).offset().top,
+			     scroll = $(window).scrollTop(),
+			     h = $(window).height();
 			if (scroll > elemPos - h/1.1){
 				$(this).addClass('scroll');
 			}else{
@@ -31,9 +31,9 @@ $(function(){
 			}
 		});
 		$('.slideRight').each(function(){
-			var elemPos = $(this).offset().top;
-			var scroll = $(window).scrollTop();
-			var h = $(window).height();
+			var elemPos = $(this).offset().top,
+			    scroll = $(window).scrollTop(),
+			    h = $(window).height();
 			if (scroll > elemPos - h/1.1){
 				$(this).addClass('scroll');
 			}else{
@@ -41,9 +41,9 @@ $(function(){
 			}
 		});
 		$('.slideLeft').each(function(){
-			var elemPos = $(this).offset().top;
-			var scroll = $(window).scrollTop();
-			var h = $(window).height();
+			var elemPos = $(this).offset().top,
+			    scroll = $(window).scrollTop(),
+			    h = $(window).height();
 			if (scroll > elemPos - h/1.1){
 				$(this).addClass('scroll');
 			}else{
@@ -53,13 +53,23 @@ $(function(){
 		$(window).scroll(function (){
 	    	$('.slideup').each(function(){
 	        	var elemPos = $(this).offset().top,
-	            	scroll = $(window).scrollTop(),
-	            	h = $(window).height()-300;
+	                scroll = $(window).scrollTop(),
+	                h = $(window).height()-300;
 	          if (scroll > elemPos - h/1.1){
 	            $(this).addClass('slide');
 	            }
 	        });
 	    });
+	    $(window).scroll(function(){
+	    	$('.feature-box').each(function(){
+		    	var elemPos = $(this).offset().top,
+				    scroll = $(window).scrollTop(),
+				    h = $(window).height();
+				if (scroll > elemPos - h/1.1){
+					$(this).addClass('active');
+		    	};
+			});
+		});
 	});
 });
 
@@ -72,6 +82,9 @@ $(function(){
 		autoplay: true,
 	    autoplaySpeed: 3000,
 		asNavFor: '.slider-nav',
+	    pauseOnDotshover: false,
+	    pauseOnhover: false,
+	    lazyLoad: "progressive"
 	});
 	$('.slider-nav').slick({
 		slidesToShow: 3,
