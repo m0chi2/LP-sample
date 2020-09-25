@@ -19,6 +19,29 @@ function stopload(){
 };
 
 $(function(){
+	$('#nav1').click(function(){
+		$('body, html').animate({
+			scrollTop: 710
+		}, 800);
+	});
+	$('#nav2').click(function(){
+		$('body, html').animate({
+			scrollTop: 1950
+		}, 800);
+	});
+	$('#nav3').click(function(){
+		$('body, html').animate({
+			scrollTop: 4360
+		}, 800);
+	});
+	$('#nav4').click(function(){
+		$('body, html').animate({
+			scrollTop: 5600
+		}, 800);
+	});
+});
+
+$(function(){
 	$(window).scroll(function(){
 		$('.fade').each(function(){
 			var elemPos = $(this).offset().top,
