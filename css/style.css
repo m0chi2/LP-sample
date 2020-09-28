@@ -509,10 +509,10 @@ video {
 	margin: 30px 0;
 }
 /* .slider指定しないとheight認識されなかった */
-.slider-for .slider-wrap {
+.slick-slide .slider-wrap {
 	position: relative;
 }
-.slider-for .slider-content {
+.slick-slide .slider-content {
 	position: absolute;
 	bottom: 50px;
 	left: 5%;
